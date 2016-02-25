@@ -1,2 +1,2 @@
 # calendar
-这是一个angularjs日历控件
+杩欐槸涓�涓猘ngularjs鏃ュ巻鎺т欢
