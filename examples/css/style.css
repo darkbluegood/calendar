@@ -1,0 +1,6 @@
+.datepicker{ font-size:18px; }
+.datepicker th{ font-weight:bold;padding:.4em 0; }
+.datepicker td{ text-align:center;height:100px;vertical-align:middle }
+
+.nextMonth,.lastMonth,.thisMonth{ font-size:18px;color:#333 }
+.calender_highlight{ color:red }

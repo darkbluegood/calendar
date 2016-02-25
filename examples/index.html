@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script src="js/ionic.bundle.js"></script>
+    <script src="js/calendar.min.js"></script>
+  </head>
+  
+  <body ng-controller="calendarCtrl">
+  		<calandar></calandar>
+  	
+
+	<script type="text/ng-template" id="templates/calendar.html">
+		<div class="calendarHeader">
+  			<div class="row text-center">
+  				<div class="col">
+	  				<a href="javascript:void(0)" ng-click="lastMonth()" class="lastMonth"><i class="icon ion-chevron-left"></i></a>
+	  			</div>
+	  			<div class="col">
+	  				<span ng-bind="thisMonth" class="thisMonth"></span> <span ng-bind="year" class="thisMonth"></span>
+	  			</div>
+	  			<div class="col">
+	  				<a href="javascript:void(0)" ng-click="nextMonth()" class="nextMonth"><i class="icon ion-chevron-right"></i></a>
+	  			</div>
+  			</div>
+  		</div>
+  
+  		<table width="100%" border="0" class="datepicker">
+  			<tr>
+  				<th>Mon</th>
+  				<th>Tue</th>
+  				<th>Wed</th>
+  				<th>Thu</th>
+  				<th>Fri</th>
+  				<th>Sat</th>
+  				<th>Sun</th>
+  			</tr>
+  			<tr ng-repeat="d in list">
+  				<td ng-repeat="a in d" ng-bind="a.day"  ng-class="a.cssClass"></td>
+  			</tr> 
+  		</table>
+	</script>
+  		
+  </body>
+ 
+</html>
